@@ -52,7 +52,7 @@ def RDBI(X, filters, base, number):
         X = res_identity(X, filters, base+ '/id_'+str(1+i))
     
     return X
-def XYZ(input_shape,num_of_classes):
+def __Net(input_shape,num_of_classes):
     
     X_input = Input(input_shape)
 
