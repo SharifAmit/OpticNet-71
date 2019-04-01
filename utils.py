@@ -1,6 +1,6 @@
 from keras import callbacks
 
-def callback_for_training(tf_log_dir_name='./tf-log-attention-56-exp-oct/',patience_lr=10):
+def callback_for_training(tf_log_dir_name='./res-dilated-interpolated/',patience_lr=10):
     cb = [None] * 3
     """
     Tensorboard log callback
