@@ -39,8 +39,8 @@ def Srinivasan2014(batch_size,image_size,data_dir):
     train_size = 2916
     test_size = 315
 
-    train_path = data_dir+'/train'
-    test_path = data_dir+'/test'
+    train_path = data_dir+'\Train'
+    test_path = data_dir+'\Test'
 
     classes=['AMD', 'DME', 'NORMAL']
 

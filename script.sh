@@ -1,0 +1,1 @@
+python train.py --datadir=F:\OCT_classification\OCT_2nd_dataset --dataset=Srinivasan2014
