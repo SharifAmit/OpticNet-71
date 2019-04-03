@@ -1,6 +1,6 @@
 from keras import callbacks
 
-def callback_for_training(tf_log_dir_name='./res-dilated-interpolated/',patience_lr=10):
+def callback_for_training(tf_log_dir_name='./optic-net-log/',patience_lr=10,snapshot_name=None):
     cb = [None] * 3
     """
     Tensorboard log callback
@@ -19,9 +19,14 @@ def callback_for_training(tf_log_dir_name='./res-dilated-interpolated/',patience
     """
     Model Checkpointer
     """
-    checkpointer = callbacks.ModelCheckpoint(filepath="visual-attention-dilation-weights.{epoch:02d}-{val_acc:.2f}.hdf5",
-                            verbose=0,
-                            monitor='val_acc')
+    if snapshot_name != None:
+        checkpointer = callbacks.ModelCheckpoint(filepath="optic-net.{epoch:02d}-{val_acc:.2f}.hdf5",
+                                verbose=0,
+                                monitor='val_acc')
+    else :
+        checkpointer = callbacks.ModelCheckpoint(filepath=snapshot_name+".{epoch:02d}-{val_acc:.2f}.hdf5",
+                                verbose=0,
+                                monitor='val_acc')
     cb[1] = checkpointer
     
     """

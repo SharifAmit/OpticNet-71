@@ -6,8 +6,8 @@ def Kermany2018(batch_size,image_size,data_dir):
     Publication : https://www.cell.com/cell/fulltext/S0092-8674(18)30154-5
     Dataset : https://data.mendeley.com/datasets/rscbjbr9sj/3
     '''
-    train_size = 83484
-    test_size = 1000
+    #train_size = 83484
+    #test_size = 1000
 
     train_datagen = ImageDataGenerator(rotation_range=40,
                                    width_shift_range=0.2,
@@ -36,11 +36,11 @@ def Srinivasan2014(batch_size,image_size,data_dir):
     Publication : http://www.opticsinfobase.org/boe/abstract.cfm?uri=boe-5-10-3568
     Dataset : http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm
     '''
-    train_size = 2916
-    test_size = 315
+    #train_size = 2916
+    #test_size = 315
 
-    train_path = data_dir+'\Train'
-    test_path = data_dir+'\Test'
+    train_path = data_dir+'/Train'
+    test_path = data_dir+'/Test'
 
     classes=['AMD', 'DME', 'NORMAL']
 
