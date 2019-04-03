@@ -1,3 +1,5 @@
 *.h5
 *.hdf5
 *.sh
+optic-net-log-rand/
+data/
