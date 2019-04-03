@@ -3,3 +3,7 @@
 *.sh
 optic-net-log-rand/
 data/
+*.png
+*.jpeg
+*.tiff
+*.tif

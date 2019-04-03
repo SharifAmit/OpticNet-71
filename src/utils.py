@@ -1,6 +1,6 @@
 from keras import callbacks
 
-def callback_for_training(tf_log_dir_name='./optic-net-log/',patience_lr=10,snapshot_name=None):
+def callback_for_training(tf_log_dir_name='./log/',patience_lr=10,snapshot_name=None):
     cb = [None] * 3
     """
     Tensorboard log callback

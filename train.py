@@ -50,7 +50,7 @@ def train(data_dir, logdir, input_size, dataset, batch_size, weights, epoch, pre
     else :    
         model.save(snapshot_name+'.h5')
     
-    plot_loss_acc(history)
+    plot_loss_acc(history,snapshot_name)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
