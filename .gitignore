@@ -1,7 +1,7 @@
 *.h5
 *.hdf5
 *.sh
-optic-net-log/
+optic-net-log-rand/
 data/
 *.png
 *.jpeg
