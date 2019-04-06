@@ -1,0 +1,6 @@
+pycm==1.9
+keras==2.2.4
+tensorflow==1.12
+pycm==1.9
+matplotlib
+sklearn

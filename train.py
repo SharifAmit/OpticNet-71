@@ -54,7 +54,7 @@ def train(data_dir, logdir, input_size, dataset, batch_size, weights, epoch, pre
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dataset', type=str, help='Choosing between 2 OCT datasets', choices=['Srinivasan2014','Kermany2018'])
+    parser.add_argument('--dataset', type=str, required=True, help='Choosing between 2 OCT datasets', choices=['Srinivasan2014','Kermany2018'])
     parser.add_argument('--batch', type=int, default=8)
     parser.add_argument('--input_dim', type=int, default=224)
     parser.add_argument('--datadir', type=str, required=True, help='path/to/data_directory')
