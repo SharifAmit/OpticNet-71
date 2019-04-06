@@ -17,35 +17,35 @@ def Weighted_Error(y_true,y_pred):
 
     weight_sum = 0
     for i in range(4):
-            for j in range(4):
-                if i!=j:
-                    weight_sum = weight_sum + (matrix[i][j]*weighted_error_table[i][j])
+        for j in range(4):
+            if i!=j:
+                weight_sum = weight_sum + (matrix[i][j]*weighted_error_table[i][j])
                 
-    print ('Weighted Error: '+str(weight_sum*100/1000))
+    print ('Weighted Error : '+str(weight_sum*100/1000)+'%')
 
 
-def print_metric(y_pred,y_true,weighted_error=False):
+def print_metric(y_true,y_pred,weighted_error=False):
 
 
     cz = pycm.ConfusionMatrix(actual_vector=y_true.argmax(axis=1), predict_vector=y_pred.argmax(axis=1))
     
     # Accuracy
     acc = cz.Overall_ACC
-    print("Average Accuracy :"+str(acc))
+    print("Average Accuracy : "+str(acc*100)+'%')
 
     # Specificity
     specificity = cz.TNR
     totalprecision = 0
     for key, value in specificity.items():
         totalprecision = totalprecision + value
-    print('Average Specificity:'+str(totalprecision/4.0))
+    print('Average Specificity : '+str(totalprecision*100/4.0)+'%')
 
     # Sensitivity
     recall = cz.TPR
     totalrecall = 0
     for key, value in recall.items():
         totalrecall = totalrecall  + value
-    print('Average Sensitivity:'+str(totalrecall /4.0))
+    print('Average Sensitivity : '+str(totalrecall*100/4.0)+'%')
 
     if weighted_error==True:
         Weighted_Error(y_true,y_pred)
