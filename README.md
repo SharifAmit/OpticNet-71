@@ -28,11 +28,14 @@ sudo pip3 -r requirements.txt
 ```
 
 # Demo
+- Download the weight file for model trained on Kermany2018 [Link](https://drive.google.com/open?id=1hMcRr4DscTGCskVdy5s4ANIBJ6sZN4yz)
+- Download the weight file for model trained on Srinivasan2014 [Link](https://drive.google.com/open?id=1hf-J8uzeDk6tn4AS2iMKfm1p4j18LbKn)
+-Run the inference.py file with the below command
 ```
 python3 inference.py --imgpath='location of the testing image(single file)' --weights='location to the .h5 file' --dataset='Srinivasan2014 or Kermany2018 (mention either of the dataset'
 ```
 
-# Training on OCT2017 Dataset
+# Training on Kermany2018 Dataset
 
 Please cite the paper if you use their data
 ```
