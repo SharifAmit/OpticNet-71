@@ -17,12 +17,17 @@ sudo apt-get install pip3 python3-dev
 sudo pip3 -r requirements.txt
 ```
 # Installation Instruction for Windows
-- Download and Install [Nvidia Drivers] (https://www.nvidia.com/download/driverResults.aspx/130631/en-us)
+- Download and Install [Nvidia Drivers](https://www.nvidia.com/download/driverResults.aspx/130631/en-us)
 - Download and Install [Nvidia Cuda Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Windows&target_arch=x86_64&target_version=7&target_type=exelocal)
-- Install Pip and Python3 environemnt [Web link](https://www.python.org/downloads/windows/)
+- Install Pip and Python3 environemnt from [Web link](https://www.python.org/downloads/windows/)
 - Install packages from requirements.txt
 ```
 sudo pip3 -r requirements.txt
 ```
 
-# 
+# Demo
+```
+python3 inference.py --imgpath='location of the testing image(single file)' --weights='location to the .h5 file' --dataset='Srinivasan2014 or Kermany2018 (mention either of the dataset'
+```
+
+# Training on OCT2017 Dataset
