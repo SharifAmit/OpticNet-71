@@ -49,7 +49,7 @@ def inference(img,weights,dataset):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--imgpath', type=str, required=True, help='path/to/image')
-    parser.add_argument('--weights', type=str, required=True, help='Resuming training from previous weights')
+    parser.add_argument('--weights', type=str, required=True, help='Weights for prediction')
     parser.add_argument('--dataset', type=str, required=True, help='Choosing between 2 OCT datasets', choices=['Srinivasan2014','Kermany2018'])
     args = parser.parse_args()
     inference(args.imgpath, args.weights, args.dataset)
