@@ -50,3 +50,24 @@ Please cite the paper if you use their data
 ```
 https://data.mendeley.com/datasets/rscbjbr9sj/3
 ```
+
+- Folder structure for training
+```
+├── data
+|   ├──train
+|      ├──CNV
+|      ├──DME
+|      ├──DRUSEN
+|      └──Normal
+|   ├──test
+|      ├──CNV
+|      ├──DME
+|      ├──DRUSEN
+|      └──Normal
+├── LICENSE
+├── README.md
+├── inference.py
+├── requirements.txt
+├── test.py
+└── train.py
+```
