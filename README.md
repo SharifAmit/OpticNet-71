@@ -31,3 +31,22 @@ python3 inference.py --imgpath='location of the testing image(single file)' --we
 ```
 
 # Training on OCT2017 Dataset
+
+Please cite the paper if you use their data
+```
+@article{kermany2018identifying,
+  title={Identifying medical diagnoses and treatable diseases by image-based deep learning},
+  author={Kermany, Daniel S and Goldbaum, Michael and Cai, Wenjia and Valentim, Carolina CS and Liang, Huiying and Baxter, Sally L and McKeown, Alex and Yang, Ge and Wu, Xiaokang and Yan, Fangbing and others},
+  journal={Cell},
+  volume={172},
+  number={5},
+  pages={1122--1131},
+  year={2018},
+  publisher={Elsevier}
+}
+```
+
+- Dataset download link 
+```
+https://data.mendeley.com/datasets/rscbjbr9sj/3
+```
