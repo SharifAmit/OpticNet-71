@@ -54,20 +54,38 @@ https://data.mendeley.com/datasets/rscbjbr9sj/3
 - Folder structure for training
 ```
 ├── data
-|   ├──train
-|      ├──CNV
-|      ├──DME
-|      ├──DRUSEN
-|      └──Normal
-|   ├──test
-|      ├──CNV
-|      ├──DME
-|      ├──DRUSEN
-|      └──Normal
+|   ├──OCT2017
+|       ├──train
+|           ├──CNV
+|           ├──DME
+|           ├──DRUSEN
+|           └──Normal
+|       ├──test
+|           ├──CNV
+|           ├──DME
+|           ├──DRUSEN
+|           └──Normal
+├── src
 ├── LICENSE
 ├── README.md
 ├── inference.py
 ├── requirements.txt
 ├── test.py
 └── train.py
+```
+- Type this in terminal to run the train.py file
+```
+python3 train.py --dataset=Kermany2018 --datadir=OCT2017 --batch=4 --epoch=30 --logdir=optic-net-log --snapshot_name=optic-net-custom
+```
+- There are different flags to choose from. Not all of them are mandatory
+
+```
+   '--dataset', type=str, required=True, help='Choosing between 2 OCT datasets', choices=['Srinivasan2014','Kermany2018']
+   '--batch', type=int, default=8
+   '--input_dim', type=int, default=224
+   '--datadir', type=str, required=True, help='path/to/data_directory'
+   '--epoch', type=int, default=30
+   '--logdir', type=str
+   '--weights', type=str,default=None, help='Resuming training from previous weights'
+   '--snapshot_name',type=str, default=None, help='Name the saved snapshot'
 ```
