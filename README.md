@@ -1,11 +1,11 @@
 # OCT_Classification
 Classifying different Retinal Diseases using Deep Learning from Optical Coherence Tomography Images
 
-# Pre-requisite
+## Pre-requisite
 - Ubuntu 18.04 / Windows 7 or later
 - NVIDIA Graphics card
 
-# Installation Instruction for Ubuntu
+## Installation Instruction for Ubuntu
 - Download and Install [Nvidia Drivers] (https://www.nvidia.com/Download/driverResults.aspx/142567/en-us)
 - Download and Install via Runfile [Nvidia Cuda Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal)
 - Download and Install [Nvidia CuDNN 7.1 or later](https://developer.nvidia.com/rdp/cudnn-archive)
@@ -17,7 +17,7 @@ sudo apt-get install pip3 python3-dev
 ```
 sudo pip3 -r requirements.txt
 ```
-# Installation Instruction for Windows
+## Installation Instruction for Windows
 - Download and Install [Nvidia Drivers](https://www.nvidia.com/download/driverResults.aspx/130631/en-us)
 - Download and Install [Nvidia Cuda Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Windows&target_arch=x86_64&target_version=7&target_type=exelocal)
 - Download and Install [Nvidia CuDNN 7.1 or later](https://developer.nvidia.com/rdp/cudnn-archive)
@@ -27,7 +27,7 @@ sudo pip3 -r requirements.txt
 sudo pip3 -r requirements.txt
 ```
 
-# Demo
+## Demo
 - Download the weight file for model trained on Kermany2018 [Link](https://drive.google.com/open?id=1hMcRr4DscTGCskVdy5s4ANIBJ6sZN4yz)
 - Download the weight file for model trained on Srinivasan2014 [Link](https://drive.google.com/open?id=1hf-J8uzeDk6tn4AS2iMKfm1p4j18LbKn)
 - Run the inference.py file with the below command
@@ -35,7 +35,7 @@ sudo pip3 -r requirements.txt
 python3 inference.py --imgpath='location of the testing image(single file)' --weights='location to the .h5 file' --dataset='Srinivasan2014 or Kermany2018 (mention either of the dataset'
 ```
 
-# Training on Kermany2018 Dataset
+## Training on Kermany2018 Dataset
 
 Please cite the paper if you use their data
 ```
@@ -95,7 +95,7 @@ python3 train.py --dataset=Kermany2018 --datadir=OCT2017 --batch=4 --epoch=30 --
    '--snapshot_name',type=str, default=None, help='Name the saved snapshot'
 ```
 
-# Training on Srinivasan2014 Dataset
+## Training on Srinivasan2014 Dataset
 
 Please cite the paper if you use their data
 ```
