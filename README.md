@@ -94,3 +94,19 @@ python3 train.py --dataset=Kermany2018 --datadir=OCT2017 --batch=4 --epoch=30 --
    '--weights', type=str,default=None, help='Resuming training from previous weights'
    '--snapshot_name',type=str, default=None, help='Name the saved snapshot'
 ```
+
+# Training on Srinivasan2014 Dataset
+
+Please cite the paper if you use their data
+```
+@article{sri2014,
+  title={Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images},
+  author={Srinivasan, Pratul P and Kim, Leo A and Mettu, Priyatham S and Cousins, Scott W and Comer, Grant M and Izatt, Joseph A and Farsiu, Sina},
+  journal={Biomedical optics express},
+  volume={5},
+  number={10},
+  pages={3568--3577},
+  year={2014},
+  publisher={Optical Society of America}
+}
+```
