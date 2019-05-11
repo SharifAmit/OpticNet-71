@@ -6,7 +6,7 @@ Classifying different Retinal Diseases using Deep Learning from Optical Coherenc
 - NVIDIA Graphics card
 
 ## Installation Instruction for Ubuntu
-- Download and Install [Nvidia Drivers] (https://www.nvidia.com/Download/driverResults.aspx/142567/en-us)
+- Download and Install [Nvidia Drivers](https://www.nvidia.com/Download/driverResults.aspx/142567/en-us)
 - Download and Install via Runfile [Nvidia Cuda Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal)
 - Download and Install [Nvidia CuDNN 7.1 or later](https://developer.nvidia.com/rdp/cudnn-archive)
 - Install Pip and Python3 enviornment
