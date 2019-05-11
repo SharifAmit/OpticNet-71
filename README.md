@@ -37,7 +37,7 @@ python3 inference.py --imgpath='location of the testing image(single file)' --we
 
 ## Training on Kermany2018 Dataset
 
-Please cite the paper if you use their data
+- Please cite the paper if you use their data
 ```
 @article{kermany2018identifying,
   title={Identifying medical diagnoses and treatable diseases by image-based deep learning},
@@ -98,7 +98,7 @@ python3 train.py --dataset=Kermany2018 --datadir=OCT2017 --batch=4 --epoch=30 --
 
 ## Training on Srinivasan2014 Dataset
 
-Please cite the paper if you use their data
+- Please cite the paper if you use their data
 ```
 @article{sri2014,
   title={Fully automated detection of diabetic macular edema and dry age-related macular degeneration from optical coherence tomography images},
@@ -118,13 +118,13 @@ http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm
 
 ## Folder Structure Rearrangement
 
-The folder stucture for this dataset neeeds to be rearranged. We have provided a script, please run the script below script.
+- The folder stucture for this dataset neeeds to be rearranged. We have provided a script, please run the script below script.
 
 ```
 data_preprocess_sri2014.py --datadir=
 ```
 
-The structure will look like this before rearrangement.
+- The structure will look like this before rearrangement.
 ```
 ├── data
 |   ├──2014_BOE_Srinivasan
@@ -147,7 +147,7 @@ The structure will look like this before rearrangement.
 ├── test.py
 └── train.py
 ```
-And it will look like this afterwards.
+- And it will look like this afterwards.
 ```
 ├── data
 |   ├──OCT2017
