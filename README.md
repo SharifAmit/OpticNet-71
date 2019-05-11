@@ -51,12 +51,12 @@ Please cite the paper if you use their data
 }
 ```
 
-- Dataset download link 
+### Dataset download link for Kermany2014
 ```
 https://data.mendeley.com/datasets/rscbjbr9sj/3
 ```
 
-- Folder structure for training
+- Folder structure for training given below. Please make sure it matches with your local repository.
 ```
 ├── data
 |   ├──OCT2017
@@ -73,6 +73,7 @@ https://data.mendeley.com/datasets/rscbjbr9sj/3
 ├── src
 ├── LICENSE
 ├── README.md
+├── data_preprocess_sri2014.py
 ├── inference.py
 ├── requirements.txt
 ├── test.py
@@ -109,4 +110,62 @@ Please cite the paper if you use their data
   year={2014},
   publisher={Optical Society of America}
 }
+```
+### Dataset download link for Srnivinasan2014
+```
+http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm
+```
+
+## Folder Structure Rearrangement
+
+The folder stucture for this dataset neeeds to be rearranged. We have provided a script, please run the script below script.
+
+```
+data_preprocess_sri2014.py --datadir=
+```
+
+The structure will look like this before rearrangement.
+```
+├── data
+|   ├──2014_BOE_Srinivasan
+|       ├──Publication_Dataset
+|           ├──AMD1
+|           ├──AMD2
+|           ├──DME1
+|           ├──DME2
+|           .....
+|           .....
+|           └──NORMAL15
+|               └──TIFFs
+|                   └──8bitTIFFs
+├── src
+├── LICENSE
+├── README.md
+├── data_preprocess_sri2014.py
+├── inference.py
+├── requirements.txt
+├── test.py
+└── train.py
+```
+And it will look like this afterwards.
+```
+├── data
+|   ├──OCT2017
+|       ├──Train
+|           ├──AMD
+|           ├──DME
+|           └──Normal
+|       ├──Test
+|           ├──AMD
+|           ├──DME
+|           └──Normal
+├── src
+├── LICENSE
+├── README.md
+├── data_preprocess_sri2014.py
+├── inference.py
+├── requirements.txt
+├── test.py
+└── train.py
+```
 ```
