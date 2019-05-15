@@ -1,5 +1,5 @@
 # OCT_Classification
-Classifying different Retinal Diseases using Deep Learning from Optical Coherence Tomography Images
+A model for classifying different Retinal Diseases using Deep Learning from Optical Coherence Tomography Images. This code is part of the **submission materials for the IEEE J-BHI (Journal of Biomedical and Health Informatics)** for our paper *Optic-net: A Novel Convolutional Neural Network for Human level Diagnosis of Retinal Diseases from Optical Tomography Images.*
 
 ## Pre-requisite
 - Ubuntu 18.04 / Windows 7 or later
@@ -9,11 +9,21 @@ Classifying different Retinal Diseases using Deep Learning from Optical Coherenc
 - Download and Install [Nvidia Drivers](https://www.nvidia.com/Download/driverResults.aspx/142567/en-us)
 - Download and Install via Runfile [Nvidia Cuda Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal)
 - Download and Install [Nvidia CuDNN 7.1 or later](https://developer.nvidia.com/rdp/cudnn-archive)
-- Install Pip and Python3 enviornment
+- Install Pip3 and Python3 enviornment
 ```
 sudo apt-get install pip3 python3-dev
 ```
-- Install  packages from requirements.txt
+- Install Tensorflow-Gpu version-1.12 and Keras version-2.2.4
+```
+sudo pip3 install tensorflow-gpu==1.12.1
+sudo pip3 install keras==2.2.4
+```
+- N.B. If you don't have GPU, you can also build Tensorflow-CPU
+```
+sudo pip3 install tensorflow==1.12.1
+sudo pip3 install keras==2.2.4
+```
+- Install packages from requirements.txt
 ```
 sudo pip3 -r requirements.txt
 ```
@@ -22,6 +32,16 @@ sudo pip3 -r requirements.txt
 - Download and Install [Nvidia Cuda Toolkit 9.0](https://developer.nvidia.com/cuda-90-download-archive?target_os=Windows&target_arch=x86_64&target_version=7&target_type=exelocal)
 - Download and Install [Nvidia CuDNN 7.1 or later](https://developer.nvidia.com/rdp/cudnn-archive)
 - Install Pip and Python3 environemnt from [Web link](https://www.python.org/downloads/windows/)
+- Install Tensorflow-Gpu version-1.12 and Keras version-2.2.4
+```
+sudo pip3 install tensorflow-gpu==1.12.1
+sudo pip3 install keras==2.2.4
+```
+- N.B. If you don't have GPU, you can also build Tensorflow-CPU
+```
+sudo pip3 install tensorflow==1.12.1
+sudo pip3 install keras==2.2.4
+```
 - Install packages from requirements.txt
 ```
 sudo pip3 -r requirements.txt
@@ -32,7 +52,7 @@ sudo pip3 -r requirements.txt
 - Download the weight file for model trained on Srinivasan2014 [Link](https://drive.google.com/open?id=1hf-J8uzeDk6tn4AS2iMKfm1p4j18LbKn)
 - Run the inference.py file with the below command
 ```
-python3 inference.py --imgpath='location of the testing image(single file)' --weights='location to the .h5 file' --dataset='Srinivasan2014 or Kermany2018 (mention either of the dataset'
+python3 inference.py --imgpath='location of the testing image(single file)' --weights='location to the .h5 file' --dataset='Srinivasan2014 or Kermany2018'
 ```
 
 ## Training on Kermany2018 Dataset
@@ -81,7 +101,7 @@ https://data.mendeley.com/datasets/rscbjbr9sj/3
 ```
 - Type this in terminal to run the train.py file
 ```
-python3 train.py --dataset=Kermany2018 --datadir=OCT2017 --batch=4 --epoch=30 --logdir=optic-net-log --snapshot_name=optic-net-custom
+python3 train.py --dataset=Kermany2018 --datadir=data/OCT2017 --batch=4 --epoch=30 --logdir=optic-net-oct2017-log --snapshot_name=optic-net-oct2017
 ```
 - There are different flags to choose from. Not all of them are mandatory
 
@@ -118,13 +138,13 @@ http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm
 
 ## Folder Structure Rearrangement
 
-- The folder stucture for this dataset neeeds to be rearranged. We have provided a script, please run the ipython notebook.
+- The folder stucture for this dataset needs to be rearranged. We have provided a notebook to rearrange the structure and also, create the necessary directories and sub-directories. Please run the ipython notebook **data_preprocess_sri2014.ipynb**. In cmd/terminal type the below command and then open the notebook file. **Run it as it is or tinker with it, if you wanna change the directory.**
 
 ```
-data_preprocess_sri2014.ipynb
+jupyter-notebook
 ```
 
-- The structure will look like this before rearrangement.
+- The structure will look like this before the rearrangement.
 ```
 |──2014_BOE_Srinivasan
 |  ├──Publication_Dataset
@@ -167,4 +187,24 @@ data_preprocess_sri2014.ipynb
 ├── test.py
 └── train.py
 ```
+
+
+
+- Type this in terminal to run the train.py file
 ```
+python3 train.py --dataset=Srinivasan2014 --datadir=data/Srinivasan2014 --batch=4 --epoch=30 --logdir=optic-net-sri2014-log --snapshot_name=optic-net-sri2014
+```
+- There are different flags to choose from. Not all of them are mandatory
+
+```
+   '--dataset', type=str, required=True, help='Choosing between 2 OCT datasets', choices=['Srinivasan2014','Kermany2018']
+   '--batch', type=int, default=8
+   '--input_dim', type=int, default=224
+   '--datadir', type=str, required=True, help='path/to/data_directory'
+   '--epoch', type=int, default=30
+   '--logdir', type=str
+   '--weights', type=str,default=None, help='Resuming training from previous weights'
+   '--snapshot_name',type=str, default=None, help='Name the saved snapshot'
+```
+# License
+The code is released under the MIT License, you can read the license file included in the repository for details.
