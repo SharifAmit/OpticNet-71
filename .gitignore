@@ -3,11 +3,9 @@
 *.sh
 optic-net-log-rand/
 optic-net-log/
-data/
 *.png
 *.jpeg
 *.tiff
 *.tif
-*.ipynb
 metrics-jup.py
 metrics-jup-small-dataset-.py
