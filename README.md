@@ -118,10 +118,10 @@ http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm
 
 ## Folder Structure Rearrangement
 
-- The folder stucture for this dataset neeeds to be rearranged. We have provided a script, please run the script below script.
+- The folder stucture for this dataset neeeds to be rearranged. We have provided a script, please run the ipython notebook.
 
 ```
-data_preprocess_sri2014.py --datadir=
+data_preprocess_sri2014.ipynb
 ```
 
 - The structure will look like this before rearrangement.
