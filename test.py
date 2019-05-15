@@ -5,7 +5,7 @@ from keras.models import load_model
 from keras.preprocessing.image import ImageDataGenerator
 import keras.backend as K
 from src.metrics import print_metric
-
+import time
 
 def test(datadir,dataset,weights):
 
@@ -28,7 +28,11 @@ def test(datadir,dataset,weights):
 
     model = load_model(weights)
 
+    start= time.time()
     y_pred = model.predict(imgs)
+    end = time.time()
+
+    print ((end-start)/1000)
     if dataset=='Srinivasan2014':
         print_metric(y_true,y_pred,weighted_error=False)
     else:

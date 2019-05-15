@@ -6,6 +6,7 @@ from keras.models import load_model
 import cv2
 import numpy as np
 
+
 def print_pred(preds,classes):
 
     preds = preds.ravel()
@@ -39,8 +40,10 @@ def inference(img,weights,dataset):
     processsed_img = image_preprocessing(img)
     K.clear_session()
     model = load_model(weights)
+    
     preds = model.predict(processsed_img,batch_size=None,steps=1)
-
+  
+   
     print_pred(preds,classes)
     
     
