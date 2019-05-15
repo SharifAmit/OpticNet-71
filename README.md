@@ -126,18 +126,17 @@ data_preprocess_sri2014.py --datadir=
 
 - The structure will look like this before rearrangement.
 ```
-├── data
-|   ├──2014_BOE_Srinivasan
-|       ├──Publication_Dataset
-|           ├──AMD1
-|           ├──AMD2
-|           ├──DME1
-|           ├──DME2
-|           .....
-|           .....
-|           └──NORMAL15
-|               └──TIFFs
-|                   └──8bitTIFFs
+|──2014_BOE_Srinivasan
+|  ├──Publication_Dataset
+|     ├──AMD1
+|     ├──AMD2
+|     ├──DME1
+|     ├──DME2
+|     .....
+|     .....
+|     └──NORMAL15
+|         └──TIFFs
+|             └──8bitTIFFs
 ├── src
 ├── LICENSE
 ├── README.md
