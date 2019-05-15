@@ -150,7 +150,7 @@ data_preprocess_sri2014.py --datadir=
 - And it will look like this afterwards.
 ```
 ├── data
-|   ├──OCT2017
+|   ├──Srinivasan2014
 |       ├──Train
 |           ├──AMD
 |           ├──DME
