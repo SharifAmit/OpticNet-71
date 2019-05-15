@@ -1,5 +1,0 @@
-pycm==1.9
-pycm==1.9
-matplotlib
-sklearn
-jupyter-notebook
