@@ -1,5 +1,22 @@
 # OCT_Classification
-A model for classifying different Retinal Diseases using Deep Learning from Optical Coherence Tomography Images. This code is part of the **supplementary materials for the IEEE ICMLA 2019** for our paper *Optic-net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images*. The paper has since been accpeted to IEEE ICMLA 2019 and will be preseneted in December 2019.
+A model for classifying different Retinal Diseases using Deep Learning from Optical Coherence Tomography Images. This code is part of the **supplementary materials for the IEEE ICMLA 2019** for our paper *Optic-net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images*. The paper has been accpeted IEEE ICMLA 2019.
+
+### IEEE Xplore Digital Library
+```
+https://ieeexplore.ieee.org/document/8999264
+```
+
+### Arxiv Pre-print
+```
+https://arxiv.org/abs/1910.05672
+```
+
+# Citation 
+```
+S. A. Kamran, S. Saha, A. S. Sabbir and A. Tavakkoli, "Optic-Net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images," 2019 18th IEEE International Conference On Machine Learning And Applications (ICMLA), Boca Raton, FL, USA, 2019, pp. 964-971.
+
+```
+
 
 ## Pre-requisite
 - Ubuntu 18.04 / Windows 7 or later
