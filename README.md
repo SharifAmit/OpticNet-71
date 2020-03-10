@@ -13,7 +13,12 @@ https://arxiv.org/abs/1910.05672
 
 # Citation 
 ```
-S. A. Kamran, S. Saha, A. S. Sabbir and A. Tavakkoli, "Optic-Net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images," 2019 18th IEEE International Conference On Machine Learning And Applications (ICMLA), Boca Raton, FL, USA, 2019, pp. 964-971.
+@article{kamran2019optic,
+  title={Optic-Net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images},
+  author={Kamran, Sharif Amit and Saha, Sourajit and Sabbir, Ali Shihab and Tavakkoli, Alireza},
+  journal={arXiv preprint arXiv:1910.05672},
+  year={2019}
+}
 ```
 
 ## Pre-requisite
