@@ -13,10 +13,10 @@ https://arxiv.org/abs/1910.05672
 
 # Citation 
 ```
-@article{kamran2019optic,
+@inproceedings{kamran2019optic,
   title={Optic-Net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images},
   author={Kamran, Sharif Amit and Saha, Sourajit and Sabbir, Ali Shihab and Tavakkoli, Alireza},
-  journal={arXiv preprint arXiv:1910.05672},
+  booktitle={18th IEEE International Conference on Machine Learning and Applications (ICMLA 2019)},
   year={2019}
 }
 ```
