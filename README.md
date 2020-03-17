@@ -16,8 +16,10 @@ https://arxiv.org/abs/1910.05672
 @inproceedings{kamran2019optic,
   title={Optic-Net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images},
   author={Kamran, Sharif Amit and Saha, Sourajit and Sabbir, Ali Shihab and Tavakkoli, Alireza},
-  booktitle={18th IEEE International Conference on Machine Learning and Applications (ICMLA 2019)},
+  booktitle={2019 18th IEEE International Conference On Machine Learning And Applications (ICMLA)},
+  pages={964--971},
   year={2019}
+  organization={IEEE}
 }
 ```
 
