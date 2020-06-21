@@ -1,3 +1,4 @@
+*.ipynb
 *.h5
 *.hdf5
 *.sh
