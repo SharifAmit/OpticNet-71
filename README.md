@@ -160,10 +160,10 @@ http://people.duke.edu/~sf59/Srinivasan_BOE_2014_dataset.htm
 
 ## Folder Structure Rearrangement
 
-- The folder stucture for this dataset needs to be rearranged. We have provided a notebook to rearrange the structure and also, create the necessary directories and sub-directories. Please run the ipython notebook **data_preprocess_sri2014.ipynb**. In cmd/terminal type the below command and then open the notebook file. **Run it as it is or tinker with it, if you wanna change the directory.**
+- The folder stucture for this dataset needs to be rearranged. We have provided a .py file to rearrange the structure and also, create the necessary directories and sub-directories. Please run the python file **data_preprocess_sri2014.py**. In cmd/terminal type the below command. **Run it as it is or tinker with it, if you wanna change the directory.**
 
 ```
-jupyter-notebook
+python3 data_preprocess_sri2014.py
 ```
 
 - The structure will look like this before the rearrangement.
