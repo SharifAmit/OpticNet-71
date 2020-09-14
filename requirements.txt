@@ -1,4 +1,4 @@
 pycm==1.9
 matplotlib
 sklearn
-jupyter-notebook
+cv2
