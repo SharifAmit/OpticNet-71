@@ -4,7 +4,6 @@
 *.sh
 optic-net-log-rand/
 optic-net-log/
-*.png
 *.jpeg
 *.tiff
 *.tif
