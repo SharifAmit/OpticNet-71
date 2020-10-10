@@ -1,7 +1,7 @@
 # OCT_Classification
 
-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/optic-net-a-novel-convolutional-neural/retinal-oct-disease-classification-on-oct2017)](https://paperswithcode.com/sota/retinal-oct-disease-classification-on-oct2017?p=optic-net-a-novel-convolutional-neural)
-- [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/optic-net-a-novel-convolutional-neural/retinal-oct-disease-classification-on)](https://paperswithcode.com/sota/retinal-oct-disease-classification-on?p=optic-net-a-novel-convolutional-neural)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/optic-net-a-novel-convolutional-neural/retinal-oct-disease-classification-on-oct2017)](https://paperswithcode.com/sota/retinal-oct-disease-classification-on-oct2017?p=optic-net-a-novel-convolutional-neural)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/optic-net-a-novel-convolutional-neural/retinal-oct-disease-classification-on)](https://paperswithcode.com/sota/retinal-oct-disease-classification-on?p=optic-net-a-novel-convolutional-neural)
 
 A model for classifying different Retinal Diseases using Deep Learning from Optical Coherence Tomography Images. This code is part of the **supplementary materials for the IEEE ICMLA 2019** for our paper *Optic-net: A Novel Convolutional Neural Network for Diagnosis of Retinal Diseases from Optical Tomography Images*. The paper has since been accpeted to IEEE ICMLA 2019 and will be preseneted in December 2019.
 
