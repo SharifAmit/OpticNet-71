@@ -1,4 +1,4 @@
-# OCT_Classification
+# ICMLA2019 OCT_Classification
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/optic-net-a-novel-convolutional-neural/retinal-oct-disease-classification-on-oct2017)](https://paperswithcode.com/sota/retinal-oct-disease-classification-on-oct2017?p=optic-net-a-novel-convolutional-neural)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/optic-net-a-novel-convolutional-neural/retinal-oct-disease-classification-on)](https://paperswithcode.com/sota/retinal-oct-disease-classification-on?p=optic-net-a-novel-convolutional-neural)
