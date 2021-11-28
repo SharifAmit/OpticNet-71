@@ -7,6 +7,7 @@ import keras.backend as K
 import gc
 from src.utils import callback_for_training
 from src.visualize import plot_loss_acc
+from tensorflow.keras.models import load_model
 
 def train(data_dir, logdir, input_size, dataset, batch_size, weights, epoch, pre_trained_model,snapshot_name):
     
@@ -33,7 +34,10 @@ def train(data_dir, logdir, input_size, dataset, batch_size, weights, epoch, pre
 
 
     # Loading the model
-    model = OpticNet(input_size,num_of_classes)
+    if weights == None:
+        model = OpticNet(input_size,num_of_classes)
+    else :
+        model = load_model(weights)
 
     # Training the model
     history = model.fit_generator(train_batches, shuffle=True, steps_per_epoch=train_size //batch_size, validation_data=test_batches, validation_steps= test_size//batch_size, epochs=epoch, verbose=1, callbacks=cb)
