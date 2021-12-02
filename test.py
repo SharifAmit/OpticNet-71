@@ -11,15 +11,16 @@ def test(datadir,dataset,weights):
 
     test_datagen = ImageDataGenerator(rescale=1.0/255)
     image_size = 224
+    test_path = datadir+'/test'
 
     if dataset=='Srinivasan2014':
         classes=['AMD', 'DME','NORMAL']
         batch = 315
-        test_batches = test_datagen.flow_from_directory(datadir, target_size=(image_size,image_size),color_mode='rgb', classes=classes, batch_size=batch, class_mode='categorical')
+        test_batches = test_datagen.flow_from_directory(test_path, target_size=(image_size,image_size),color_mode='rgb', classes=classes, batch_size=batch, class_mode='categorical')
     else:
         classes = ['CNV', 'DME','DRUSEN','NORMAL']
         batch=1000
-        test_batches = test_datagen.flow_from_directory(datadir, target_size=(image_size,image_size),color_mode='rgb', classes=classes, batch_size=batch, class_mode='categorical')
+        test_batches = test_datagen.flow_from_directory(test_path, target_size=(image_size,image_size),color_mode='rgb', classes=classes, batch_size=batch, class_mode='categorical')
 
     imgs, y_true = next(test_batches)
 
